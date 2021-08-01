@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div id="line1">
+            <section id="numbers">
+                
+                <div id="input-flex">
+                <input type="text" id="resulted" disabled> 
+                <input type="text" id="cont" disabled>
+                </div>
+                
+                 <h1 id="name">Calculadora</h1>
+                 <button onclick="backspace('')" id="btn-backspace"><img id="img-backspace" src="assets/img/backspace.svg" alt="backspace"> </button>
+                <button onclick="reset('')" id="btn-clear">C</button>
+                
+                <button onclick="calc ('0')">0</button>
+                <button onclick="calc ('1')">1</button>
+                <button onclick="calc ('2')">2</button>
+                <button onclick="simbolos ('/')">/</button>
+                <button onclick="calc ('3')">3</button>
+                <button onclick="calc ('4')">4</button>
+                <button onclick="calc ('5')">5</button>
+                <button onclick="simbolos ('X')">X</button>
+                <button onclick="calc ('6')">6</button>
+                <button onclick="calc ('7')">7</button>
+                <button onclick="calc ('8')">8</button>
+                <button onclick="simbolos ('-')">-</button>
+                <button onclick="calc ('9')">9</button>
+                <button onclick="resolver('')" id="result">=</button>
+                <button onclick="simbolos ('+')">+</button>
+            </section>
+        </div>
+       
+    </main>
+    <script src="assets/js/calculator.js"></script>
+</body>
+</html>
