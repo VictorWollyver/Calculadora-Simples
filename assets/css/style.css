@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline-style: none;
+    font-family: 'Encode Sans SC', sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 1rem;
+    color: white;
+}
+
+main {
+    
+    background-color: rgb(110, 110, 110);
+    
+
+}
+
+div#line1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem;
+    border: none;
+    font-family: 'Encode Sans SC', sans-serif ;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0.5rem;
+}
+
+input#resulted {
+    color: gray;
+}
+
+section {
+    max-width: 90%;
+    min-width:30%;
+    height: auto;
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.25rem black;
+    border: 0.1rem solid black;
+    height: auto;
+    background-color: blue;
+    border-radius: 1rem 1rem 1rem 1rem;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+}
+
+section#numbers button {
+    padding: 1rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 300;
+    background-color: blue;
+    border: 0.1rem solid black;
+}
+
+section#numbers button:hover {
+    font-weight: 600;
+    border: none
+}
+
+section#numbers button#result {
+    background-color: rgb(32, 161, 32); 
+    grid-column: 2/4;
+    border: none
+}
+
+section#numbers button#btn-backspace {
+    background-color: rgb(255, 0, 0);
+    grid-column: 3/3;
+    border: none;
+}
+
+img#img-backspace{
+    height: 1.5rem;
+}
+
+section#numbers button#btn-clear{
+    background-color: rgb(255, 0, 0);
+    grid-column: 4/5 ;
+    border: none
+}
+
+h1#name {
+    grid-column: 1/3;
+    align-self: center;
+}
+
+div#input-flex{
+    border-radius: 0.5rem ;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/5;
+    grid-row: 1/1;
+}
+
+/*responsive*/
+
+@media (min-width:2000px){
+    html{
+        font-size: 40px;
+    }
+    section{
+        grid-gap:1rem
+    }
+}
+
+
+
+
